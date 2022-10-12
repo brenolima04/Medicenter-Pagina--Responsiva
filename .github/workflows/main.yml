@@ -15,7 +15,7 @@ jobs:
     - name: ?? Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ${{ ftp_brenonicacio.com.br }}
-        username: ${{ ftp_brenon36 }}
+        server: ${{ secrets.ftp_host }}
+        username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/projeto-medicenter/
